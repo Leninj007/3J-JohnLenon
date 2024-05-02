@@ -37,8 +37,23 @@
     width: 100%;
     font-size: 18px;
     padding: 1em;
+    border-bottom: 4px solid (var(--botao-ativo));
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
 }
 
+.botao:first-child{
+    border-radius: 20px 20px 0 0;
+
+}
+
+border:last-child{
+    border-radius: 0px 0px 20px 20px;
+}
+
+span{
+    color: var(--verde);
+}
 
 
 
