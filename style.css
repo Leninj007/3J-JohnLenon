@@ -79,3 +79,8 @@ span{
 .aba-conteudo.ativo{
     display: block;
 }
+.abas-textos{
+    background-color: var(--botao-ativo);
+    padding: 40px;
+
+}
