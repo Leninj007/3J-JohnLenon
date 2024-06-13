@@ -1,58 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus objetivos do ano</title>
-</head>
-<body>
-    <section class="conteudo-principal">
-       <h2 class="titulo-principal">Meus objetivos do anos <span>_</span></h2>
-       <div class="botoes">
-           <button class="botao">criar projetos</button>
-           <button class="botao">estudar javascript</button>
-           <button class="botao">montar um portifolio</button>
-           <button class="botao">estudar outras linguagens</button>
-       </div>
-       <div class="abas-texto">
-           <div class="abas-conteudo">
-               <h2 class="aba-conteudo-titulo-principal">
-                   Criar 3 projetos usando javascript
-               </h2>
-               <h3 class="aba-conteudo-titulo-secundario">
-                   TEMPO PARA CONCLUIR O OBJETIVO
-               </h3>
-           </div>
-           <div class="abas-conteudo">
-            <h2 class="aba-conteudo-titulo-principal">
-                Fazer 5 cursos de javascript
-            </h2>
-            <h3 class="aba-conteudo-titulo-secundario">
-                TEMPO PARA CONCLUIR O OBJETIVO
-            </h3>
-        </div>
-        <div class="abas-conteudo">
-            <h2 class="aba-conteudo-titulo-principal">
-                Colocar no meu portifolio meus 3 novos projetos
-            </h2>
-            <h3 class="aba-conteudo-titulo-secundario">
-                TEMPO PARA CONCLUIR O OBJETIVO
-            </h3>
-        </div>
-        <div class="abas-conteudo">
-            <h2 class="aba-conteudo-titulo-principal">
-                Criar 3 projetos usando javascript
-            </h2>
-            <h3 class="aba-conteudo-titulo-secundario">
-                TEMPO PARA CONCLUIR O OBJETIVO
-            </h3>
-        </div>
-       </div>
-    </section>
-
-    <script src="main.js"></script>
-    
-</body>
-</html>
+const botoes  = document.querySelectorAll(".botao");
+const conteudo  = document.querySelectorAll(".aba-conteudo");
+for (let i = 0; i < botoes.length ; i++){
+    botoes[i].onclick = function(){
+    for (j=0;j<botoes.length;j++){
+        botoes[j].classList.remove("ativo");
+        conteudo[j].classList.remove("ativo")
+    }
+    botoes[i].classList.add("ativo")
+    conteudo[i].classList.add("ativo")
+  }
+}
